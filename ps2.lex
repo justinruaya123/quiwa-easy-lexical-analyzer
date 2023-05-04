@@ -178,7 +178,6 @@ int main( int argc, char **argv )
     printf("Total number of close square brackets: %d\n", close_square_bracket_count);
     if(stack_top != 0) {
       printf("Parentheses: Mismatch!\n");
-      exit(1);
     } else {
       printf("Parentheses: Match!\n");
     }
