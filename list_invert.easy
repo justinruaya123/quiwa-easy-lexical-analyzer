@@ -1,0 +1,16 @@
+// This is a comment - you may edit this out if you did not handle comments
+// list_invert.easy
+
+
+procedure invert(l)
+   node(info,link)
+   beta = lambda
+   alpha = l
+   while alpha != lambda do
+      gamma = beta
+      beta = alpha
+      alpha = link(beta)
+      link(beta) = gamma
+   endwhile
+   l = beta
+end invert

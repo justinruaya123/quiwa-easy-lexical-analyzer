@@ -1,0 +1,12 @@
+// This is a comment - you may edit this out if you did not handle comments
+// hanoi.easy
+
+procedure THP(n,S,T,I)
+   
+   if n = 1 then output 'Move disk from peg' S 'to peg' T
+            else [ 
+                call THP(n - 1, S, I, T)
+                output 'Move disk from peg' S 'to peg' T
+                call THP(n-1, I, T, S)
+            ]
+end THP
